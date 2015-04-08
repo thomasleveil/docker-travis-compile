@@ -1,4 +1,4 @@
-FROM dockerfile/ruby
+FROM ruby
 
 # install travis-cli
 RUN gem install travis --no-rdoc --no-ri
