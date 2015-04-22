@@ -10,7 +10,7 @@ Running
 - put your `.travis.yml` file in your working directory
 - run the docker container with:
 
-        docker run --rm -it -v $(pwd):/data tomdesinto/travis-run --help 
+        docker run --rm -it -v $(pwd):/data tomdesinto/docker-travis-run --help 
 
 
 
