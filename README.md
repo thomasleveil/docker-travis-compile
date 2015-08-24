@@ -1,33 +1,21 @@
-docker-travis-run
-=================
+tomdesinto/travis-compile
+=========================
 
-Builds an docker image with the [Travis run](https://github.com/travis-ci/travis-build)  ready to run.
+Builds an docker image with the [Travis compile](https://github.com/travis-ci/travis-build) ready to run.
 
 
-Running
--------
+Usage
+-----
 
 - put your `.travis.yml` file in your working directory
 - run the docker container with:
 
-        docker run --rm -it -v $(pwd):/data tomdesinto/docker-travis-run --help 
+        docker run --rm -v $(pwd):/data tomdesinto/travis-compile > travis-run.sh
+
+This will produce a `travis-run.sh` script from the content of your `.travis.yml` file.
+
+You can pass options to the `travis compile` command by passing them to the docker run command. For instance:
+
+        docker run --rm tomdesinto/travis-compile --help
 
 
-
-Building
---------
-
-    git clone https://github.com/thomasleveil/docker-travis-run.git
-    cd docker-travis-run
-    make build
-
-or
-
-    docker build -t tomdesinto/travis-run github.com/thomasleveil/docker-travis-run.git
-	
-	
-
-Get a shell in a running container
-----------------------------------
-
-    make shell
