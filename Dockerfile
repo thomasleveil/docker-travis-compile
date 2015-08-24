@@ -14,5 +14,4 @@ RUN \
         ln -s /opt/travis-build $HOME/.travis/travis-build
 
 WORKDIR /data
-COPY run.sh /root/
-ENTRYPOINT ["/root/run.sh"]
+ENTRYPOINT ["travis", "compile", "--skip-version-check", "--skip-completion-check"]
