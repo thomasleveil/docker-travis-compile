@@ -1,5 +1,7 @@
 tomdesinto/travis-compile
 =========================
+[![](https://badge.imagelayers.io/tomdesinto/travis-compile:latest.svg)](https://imagelayers.io/?images=tomdesinto/travis-compile:latest 'Get your own badge on imagelayers.io')
+
 
 Builds an docker image with the [Travis compile](https://github.com/travis-ci/travis-build) ready to run.
 
